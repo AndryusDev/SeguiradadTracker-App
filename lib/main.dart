@@ -28,8 +28,8 @@ class LoginScreen extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              const Color.fromARGB(255, 181, 225, 255),
-              const Color.fromARGB(255, 61, 91, 175),
+              const Color.fromARGB(255, 45, 100, 138),
+              const Color.fromARGB(255, 39, 57, 109),
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -53,7 +53,8 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: const Color.fromARGB(255, 25, 16, 112),
+                    color: const Color.fromARGB(255, 245, 245, 245),
+                    //color: const Color.fromARGB(255, 25, 16, 112),
                   ),
                 ),
                 SizedBox(height: 30),
@@ -100,9 +101,9 @@ class LoginScreen extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color.fromARGB(
                                 255,
-                                36,
-                                67,
-                                153,
+                                31,
+                                96,
+                                150,
                               ),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(16),
@@ -130,7 +131,7 @@ class LoginScreen extends StatelessWidget {
                           icon: Icon(
                             Icons.fingerprint,
                             size: 40,
-                            color: const Color.fromARGB(255, 36, 67, 153),
+                            color: const Color.fromARGB(255, 32, 120, 170),
                           ),
                           onPressed: () {
                             // Aquí puedes integrar la autenticación biométrica (huella dactilar)
