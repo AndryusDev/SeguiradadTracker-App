@@ -42,10 +42,13 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 // Logo y Nombre de la App
-                Image.asset(
-                  'assets/logo.png', // Asegúrate de tener el logo en tu carpeta assets y configurarlo en pubspec.yaml.
-                  width: 100,
-                  height: 100,
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image.asset(
+                    'assets/logo.png', // Asegúrate de tener el logo en tu carpeta assets y configurarlo en pubspec.yaml.
+                    width: 100,
+                    height: 100,
+                  ),
                 ),
                 SizedBox(height: 10),
                 Text(
