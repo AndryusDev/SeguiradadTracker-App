@@ -6,8 +6,16 @@ class MenuPrincipal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Menú Principal"),
-        backgroundColor: Color.fromARGB(255, 26, 28, 133),
+        title: Text("Menú Principal", style: TextStyle(color: Colors.white)),
+        iconTheme: IconThemeData(
+          color: Color.fromARGB(
+            255,
+            245,
+            245,
+            245,
+          ), //Cambiar el color de las rayas laterales izquierdas
+        ),
+        backgroundColor: Color.fromARGB(255, 45, 100, 138),
       ),
       drawer: Drawer(
         child: ListView(
@@ -15,7 +23,7 @@ class MenuPrincipal extends StatelessWidget {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 26, 28, 133),
+                color: const Color.fromARGB(255, 45, 100, 138),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,7 +32,10 @@ class MenuPrincipal extends StatelessWidget {
                   SizedBox(height: 10),
                   Text(
                     "Seguridad Tracker",
-                    style: TextStyle(color: Colors.white, fontSize: 20),
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 245, 245, 245),
+                      fontSize: 20,
+                    ),
                   ),
                 ],
               ),

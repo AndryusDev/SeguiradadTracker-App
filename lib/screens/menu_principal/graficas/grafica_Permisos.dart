@@ -7,7 +7,7 @@ class PermisosGraficas extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Gráficas de Permisos"),
-        backgroundColor: Color.fromARGB(255, 26, 28, 133),
+        backgroundColor: const Color.fromARGB(255, 45, 100, 138),
       ),
       body: Center(
         child: Text(
