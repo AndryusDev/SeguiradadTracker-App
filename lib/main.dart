@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/menu_principal/menu_principal.dart';
 
 void main() => runApp(MyApp());
 
@@ -100,6 +101,12 @@ class LoginScreen extends StatelessWidget {
                           child: ElevatedButton(
                             onPressed: () {
                               // Implementa la acción de inicio de sesión
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => MenuPrincipal(),
+                                ),
+                              );
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color.fromARGB(
