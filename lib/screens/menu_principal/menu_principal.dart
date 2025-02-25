@@ -42,9 +42,9 @@ class MenuPrincipal extends StatelessWidget {
             ),
             _buildDrawerItem(
               context,
-              "Gráficas de Permisos",
+              "Permisos",
               Icons.insert_chart,
-              PermisosGraficas(),
+              Scaffold(body: Center(child: Text("Pantalla de Permisos"))),
             ),
             _buildDrawerItem(
               context,
@@ -71,25 +71,36 @@ class MenuPrincipal extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(child: Text("Bienvenido al Menú Principal")),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 20), // Espaciado superior
+            Text(
+              "Bienvenido al Menú Principal",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20), // Espaciado entre el texto y la gráfica
+            GraficaPermisosEspeciales(), // Aquí se agrega la gráfica de permisos
+          ],
+        ),
+      ),
     );
   }
+}
 
-  Widget _buildDrawerItem(
-    BuildContext context,
-    String title,
-    IconData icon,
-    Widget screen,
-  ) {
-    return ListTile(
-      leading: Icon(icon, color: Colors.blue),
-      title: Text(title, style: TextStyle(fontSize: 16)),
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => screen),
-        );
-      },
-    );
-  }
+Widget _buildDrawerItem(
+  BuildContext context,
+  String title,
+  IconData icon,
+  Widget screen,
+) {
+  return ListTile(
+    leading: Icon(icon, color: Colors.blue),
+    title: Text(title, style: TextStyle(fontSize: 16)),
+    onTap: () {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => screen));
+    },
+  );
 }
