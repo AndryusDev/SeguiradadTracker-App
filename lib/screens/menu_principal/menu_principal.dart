@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Permisos.dart';
+import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Comisiones.dart';
 
 class MenuPrincipal extends StatelessWidget {
   @override
@@ -82,7 +83,7 @@ class MenuPrincipal extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20), // Espaciado entre el texto y la gráfica
-            GraficaPermisosEspeciales(), // Aquí se agrega la gráfica de permisos
+            GraficaComisionesServicio(), // Aquí se agrega la gráfica de permisos
           ],
         ),
       ),
