@@ -102,7 +102,7 @@ class GraficaComisionesServicio extends StatelessWidget {
         _filaTabla("Activas", "50"),
         _filaTabla("Expiradas", "20"),
         _filaTabla("Por vencer", "15"),
-        _filaTabla("En revisión", "15"),
+        _filaTabla("Por firma", "15"),
       ],
     );
   }

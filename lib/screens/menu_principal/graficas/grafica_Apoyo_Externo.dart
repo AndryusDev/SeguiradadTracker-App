@@ -1,8 +1,7 @@
-// ignore: file_names, depend_on_referenced_packages
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
-class GraficaPermisosEspeciales extends StatelessWidget {
+class GraficaApoyoInstitucionalExterno extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -17,7 +16,7 @@ class GraficaPermisosEspeciales extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                "Distribución de Permisos Especiales",
+                "Distribución de Apoyos Institucionales Externos",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),

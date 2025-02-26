@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Permisos.dart';
 import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Comisiones.dart';
+import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Comisiones_Externas.dart';
+import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Apoyo.dart';
+import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Apoyo_Externo.dart';
+import 'package:seguridad_tracker/screens/menu_principal/graficas/grafica_Armas.dart';
 
 class MenuPrincipal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Menú Principal", style: TextStyle(color: Colors.white)),
+        title: Text("Seguridad Tracker", style: TextStyle(color: Colors.white)),
         iconTheme: IconThemeData(
           color: Color.fromARGB(
             255,
@@ -43,13 +47,13 @@ class MenuPrincipal extends StatelessWidget {
             ),
             _buildDrawerItem(
               context,
-              "Permisos",
+              "Permisos Especiales",
               Icons.insert_chart,
               Scaffold(body: Center(child: Text("Pantalla de Permisos"))),
             ),
             _buildDrawerItem(
               context,
-              "Comisiones",
+              "Comisiones de Servicio",
               Icons.assignment,
               Scaffold(body: Center(child: Text("Pantalla de Comisiones"))),
             ),
@@ -83,7 +87,12 @@ class MenuPrincipal extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20), // Espaciado entre el texto y la gráfica
-            GraficaComisionesServicio(), // Aquí se agrega la gráfica de permisos
+            GraficaPermisosEspeciales(),
+            GraficaComisionesServicio(),
+            GraficaComisionesServicioExternas(),
+            GraficaApoyoInstitucional(),
+            GraficaApoyoInstitucionalExterno(),
+            GraficaArmas(), // Aquí se agrega la gráfica de permisos
           ],
         ),
       ),
