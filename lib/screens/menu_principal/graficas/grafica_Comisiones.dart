@@ -41,7 +41,7 @@ class GraficaComisionesServicio extends StatelessWidget {
                     _leyendaItem(Colors.green, "Activas"),
                     _leyendaItem(Colors.red, "Expiradas"),
                     _leyendaItem(Colors.orange, "Por vencer"),
-                    _leyendaItem(Colors.blue, "En revisión"),
+                    _leyendaItem(Colors.blue, "Por firma"),
                   ],
                 ),
               ),
