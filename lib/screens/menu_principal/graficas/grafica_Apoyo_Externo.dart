@@ -7,7 +7,7 @@ class GraficaApoyoInstitucionalExterno extends StatelessWidget {
     return SingleChildScrollView(
       // Hacemos que todo sea desplazable
       child: Card(
-        elevation: 4,
+        elevation: 10,
         margin: EdgeInsets.all(16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         child: Padding(

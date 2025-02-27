@@ -10,7 +10,7 @@ class GraficaArmas extends StatelessWidget {
     double porcentajeArmas = (funcionariosConArmas / totalFuncionarios) * 100;
 
     return Card(
-      elevation: 4,
+      elevation: 10,
       margin: EdgeInsets.all(16),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       child: Padding(
